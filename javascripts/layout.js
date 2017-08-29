@@ -16,7 +16,7 @@ var base='  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"> \
                 </header> \
                 <div class="mdl-layout__drawer" style="overflow-y:hidden;overflow-x:hidden" id="container2"> \
                     <div style="overflow-y:scroll;overflow-x:hidden;position:relative;left:0px" id="container1">\
-                    <a class="block" href="/" style="font-size:24px;margin-top:30px;margin-bottom:30px;color:black">Home</a> \
+                    <a class="block" href="/" style="font-size:24px;margin-top:30px;margin-bottom:20px;color:black">Home</a> \
                     <a class="block" style="font-size:18px;margin-top:20px;margin-bottom:20px" target="y1" href="javascript:void(0);" id="y_1">&nbsp;  Topics</a> \
                     <div id="y1" class="hide" style="margin-bottom:20px"></div>\
                     <a class="block hide" style="font-size:18px;margin-top:20px;margin-bottom:20px" target="y2" href="javascript:void(0);" id=y_2>Year 2</a> \
