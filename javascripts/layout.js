@@ -16,15 +16,15 @@ var base='  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"> \
                 </header> \
                 <div class="mdl-layout__drawer" style="overflow-y:hidden;overflow-x:hidden" id="container2"> \
                     <div style="overflow-y:scroll;overflow-x:hidden;position:relative;left:0px" id="container1">\
-                    <a class="block" href="/" style="font-size:24px;margin-top:20px">Home</a> \
-                    <a class="block" style="font-size:18px;margin-top:20px;margin-bottom:20px" target="y1" href="javascript:void(0);" id="y_1">Topics</a> \
+                    <a class="block" href="/" style="font-size:24px;margin-top:20px;color:black">Home</a> \
+                    <a class="block" style="font-size:18px;margin-top:20px;margin-bottom:20px" target="y1" href="javascript:void(0);" id="y_1">&nbsp;  Topics</a> \
                     <div id="y1" class="hide" style="margin-bottom:20px"></div>\
                     <a class="block hide" style="font-size:18px;margin-top:20px;margin-bottom:20px" target="y2" href="javascript:void(0);" id=y_2>Year 2</a> \
                     <div id="y2" class="hide"></div>\
-                    <a class="block" href="/search.html" style="font-size:18px;margin-top:20px;margin-bottom:20px">Search</a> \
-                    <a class="block" href="/Formulae.html" style="font-size:18px;margin-top:20px;margin-bottom:20px">Formulae</a> \
-                    <a class="block" href="/Tools/" style="font-size:18px;margin-top:20px;margin-bottom:20px">Maths Tools</a> \
-                    <a class="block" href="/FurtherReadings/" style="font-size:18px;margin-top:20px;margin-bottom:20px">FurtherReadings</a> \
+                    <a class="block" href="/search.html" style="font-size:18px;margin-top:20px;margin-bottom:20px">&nbsp;  Search</a> \
+                    <a class="block" href="/Formulae.html" style="font-size:18px;margin-top:20px;margin-bottom:20px">&nbsp;  Formulae</a> \
+                    <a class="block" href="/Tools/" style="font-size:18px;margin-top:20px;margin-bottom:20px">&nbsp;  Maths Tools</a> \
+                    <a class="block" href="/FurtherReadings/" style="font-size:18px;margin-top:20px;margin-bottom:20px">&nbsp;  Further Readings</a> \
                     </div> \
                 </div> \
                 <main class="mdl-layout__content" id="body"> \
@@ -37,9 +37,9 @@ function layout(){
     var con=document.body.innerHTML;
     document.body.innerHTML=base.replace("Content",'<div class="page-content">'+con+'</div>');
     for(var i=0;i<Year1.length;i++)
-        document.getElementById("y1").innerHTML+=CBL("&nbsp;  "+Year1[i],"/Grades/Year_"+1+"/"+replace(Year1[i])+".html",15);
+        document.getElementById("y1").innerHTML+=CBL("&nbsp;  &nbsp;  "+Year1[i],"/Grades/Year_"+1+"/"+replace(Year1[i])+".html",15);
     for(var i=0;i<Year2.length;i++)
-        document.getElementById("y2").innerHTML+=CBL("&nbsp;  "+Year2[i],"/Grades/Year_"+2+"/"+replace(Year2[i])+".html",15);
+        document.getElementById("y2").innerHTML+=CBL("&nbsp;  &nbsp;  "+Year2[i],"/Grades/Year_"+2+"/"+replace(Year2[i])+".html",15);
     /*if(document.body.clientWidth<=500){
         $("#y_1").addClass("causeSlideOnMouse");
         $("#y_2").addClass("causeSlideOnMouse");*/
